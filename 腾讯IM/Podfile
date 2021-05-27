@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+install! 'cocoapods', :disable_input_output_paths => true
+
+target '腾讯IM' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  #use_frameworks!
+  use_modular_headers!
+  # Pods for 腾讯IM
+  pod 'TXIMSDK_TUIKit_iOS',:git => 'https://github.com/ytt123/TIMSDKDemo.git',:commit=>'4633d7be788fec54b2294deba926ccfb9ecd87da'
+  pod 'TXIMSDK_TUIKit_live_iOS',:git => 'https://github.com/ytt123/TIMSDKDemo.git',:commit=>'4633d7be788fec54b2294deba926ccfb9ecd87da'
+  pod 'MJRefresh'
+end

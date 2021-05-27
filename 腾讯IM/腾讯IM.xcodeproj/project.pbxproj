@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4136CAC0F6655CBEED376DD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8F88FCA33E20B0D4300166 /* libz.tbd */; };
+		58979936B9CF863A6A4CD791 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC15B8AC233428A2CE1F94F /* CoreData.framework */; };
+		725942C0A3840D729AE1928C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA939E353E5BAFB2C5E763B8 /* CFNetwork.framework */; };
+		73E045EEA6AB188EF20B0765 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7723D1E8103C04456BDD66BF /* SystemConfiguration.framework */; };
+		971693A98A51075134EEF51C /* libPods-腾讯IM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4B0BF26D107B7C2A2340A8 /* libPods-腾讯IM.a */; };
+		A6A55A8CB967EFD9758F538C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDBF1C1049A13C13AD95D6B /* Security.framework */; };
+		A9832B2193B9AAFA775A05A8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D064B18E0D5FE5FB109C3BC8 /* libsqlite3.0.tbd */; };
+		AA37B2A54B6AC74D872EFBBE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DC7CF1698FF6424B661AEA /* CoreTelephony.framework */; };
+		BCBBBC40C50CAFE0DAC23B4A /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF808B6823FCE52917F2D62E /* UserNotifications.framework */; };
+		C448F5EF264F6439005927BB /* SearchFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C448F5ED264F6439005927BB /* SearchFriendViewController.m */; };
+		C448F5F3264F6485005927BB /* FriendRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C448F5F1264F6485005927BB /* FriendRequestViewController.m */; };
+		C448F5FA264F6C62005927BB /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C448F5F6264F6C62005927BB /* SettingController.m */; };
+		C448F5FB264F6C62005927BB /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = C448F5F9264F6C62005927BB /* ProfileController.m */; };
+		C44CF060265F78C700373829 /* TUserProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44CF05F265F78C700373829 /* TUserProfileController.m */; };
+		C44CF08A265F916F00373829 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C44CF087265F916E00373829 /* Localizable.strings */; };
+		C4EFF525264CB3950050D6E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF524264CB3950050D6E6 /* AppDelegate.m */; };
+		C4EFF52E264CB3950050D6E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EFF52C264CB3950050D6E6 /* Main.storyboard */; };
+		C4EFF530264CB3950050D6E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EFF52F264CB3950050D6E6 /* Assets.xcassets */; };
+		C4EFF533264CB3950050D6E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EFF531264CB3950050D6E6 /* LaunchScreen.storyboard */; };
+		C4EFF536264CB3950050D6E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF535264CB3950050D6E6 /* main.m */; };
+		C4EFF547264CC8060050D6E6 /* GenerateTestUserSig.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF546264CC8060050D6E6 /* GenerateTestUserSig.m */; };
+		C4EFF58F264CD00A0050D6E6 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF58D264CD00A0050D6E6 /* LoginController.m */; };
+		C4EFF590264CD00A0050D6E6 /* TCLoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF58E264CD00A0050D6E6 /* TCLoginParam.m */; };
+		C4EFF598264CD07D0050D6E6 /* PAirSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF593264CD07D0050D6E6 /* PAirSandbox.m */; };
+		C4EFF599264CD07D0050D6E6 /* TCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF594264CD07D0050D6E6 /* TCUtil.m */; };
+		C4EFF59E264CD5340050D6E6 /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF59D264CD5340050D6E6 /* TabbarVC.m */; };
+		C4EFF5A5264CD60B0050D6E6 /* ConversationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5A4264CD60B0050D6E6 /* ConversationVC.m */; };
+		C4EFF5AB264CD6480050D6E6 /* ContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5AA264CD6480050D6E6 /* ContactsVC.m */; };
+		C4EFF5B1264CD7EB0050D6E6 /* ChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5B0264CD7EB0050D6E6 /* ChatVC.m */; };
+		C4EFF5B9264CFAE70050D6E6 /* MyCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5B7264CFAE70050D6E6 /* MyCustomCell.m */; };
+		C4EFF5BA264CFAE70050D6E6 /* MyCustomCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5B8264CFAE70050D6E6 /* MyCustomCellData.m */; };
+		C4EFF5CF264CFB600050D6E6 /* TUILiveRoomListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5BF264CFB600050D6E6 /* TUILiveRoomListViewController.m */; };
+		C4EFF5D0264CFB600050D6E6 /* TUILiveRoomListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5C1264CFB600050D6E6 /* TUILiveRoomListView.m */; };
+		C4EFF5D1264CFB600050D6E6 /* TUILiveRoomListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5C3264CFB600050D6E6 /* TUILiveRoomListCell.m */; };
+		C4EFF5D2264CFB600050D6E6 /* TUILiveTopSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5C5264CFB600050D6E6 /* TUILiveTopSegmentView.m */; };
+		C4EFF5D3264CFB600050D6E6 /* TUILiveRoomInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5C8264CFB600050D6E6 /* TUILiveRoomInfo.m */; };
+		C4EFF5D4264CFB600050D6E6 /* TUILiveRoomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5CA264CFB600050D6E6 /* TUILiveRoomManager.m */; };
+		C4EFF5D5264CFB600050D6E6 /* TUILiveHeartBeatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5CC264CFB600050D6E6 /* TUILiveHeartBeatManager.m */; };
+		C4EFF5D6264CFB600050D6E6 /* TUILiveSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5CE264CFB600050D6E6 /* TUILiveSceneViewController.m */; };
+		C4EFF5DB264D02ED0050D6E6 /* TFriendProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF5D9264D02ED0050D6E6 /* TFriendProfileController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		560E719CCEC34BDAD1820E04 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F371412E67718052AE0394A /* Pods-腾讯IM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-腾讯IM.release.xcconfig"; path = "Target Support Files/Pods-腾讯IM/Pods-腾讯IM.release.xcconfig"; sourceTree = "<group>"; };
+		35DC7CF1698FF6424B661AEA /* CoreTelephony.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = "<group>"; };
+		5752649DA41B6B46A234D67D /* XGMTACloud.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = XGMTACloud.framework; path = "/Users/yangtaotao/Desktop/腾讯IM/TPNS/XGMTACloud.framework"; sourceTree = "<group>"; };
+		715D67B1863BE5B6EA21C08C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7723D1E8103C04456BDD66BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<group>"; };
+		868CAAF7A3641CA7EFB4ADA0 /* Pods-腾讯IM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-腾讯IM.debug.xcconfig"; path = "Target Support Files/Pods-腾讯IM/Pods-腾讯IM.debug.xcconfig"; sourceTree = "<group>"; };
+		9D4B0BF26D107B7C2A2340A8 /* libPods-腾讯IM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-腾讯IM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA939E353E5BAFB2C5E763B8 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = "<group>"; };
+		AE8F88FCA33E20B0D4300166 /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libz.tbd; sourceTree = "<group>"; };
+		BF808B6823FCE52917F2D62E /* UserNotifications.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = "<group>"; };
+		C448F5ED264F6439005927BB /* SearchFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchFriendViewController.m; sourceTree = "<group>"; };
+		C448F5EE264F6439005927BB /* SearchFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFriendViewController.h; sourceTree = "<group>"; };
+		C448F5F1264F6485005927BB /* FriendRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendRequestViewController.m; sourceTree = "<group>"; };
+		C448F5F2264F6485005927BB /* FriendRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendRequestViewController.h; sourceTree = "<group>"; };
+		C448F5F6264F6C62005927BB /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		C448F5F7264F6C62005927BB /* ProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileController.h; sourceTree = "<group>"; };
+		C448F5F8264F6C62005927BB /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		C448F5F9264F6C62005927BB /* ProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController.m; sourceTree = "<group>"; };
+		C44CF05E265F78C700373829 /* TUserProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUserProfileController.h; sourceTree = "<group>"; };
+		C44CF05F265F78C700373829 /* TUserProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUserProfileController.m; sourceTree = "<group>"; };
+		C44CF088265F916E00373829 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../TIMSDK/iOS/TUIKitDemo/TUIKitDemo/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C44CF089265F916F00373829 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "../../TIMSDK/iOS/TUIKitDemo/TUIKitDemo/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C4EFF520264CB3950050D6E6 /* 腾讯IM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "腾讯IM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EFF523264CB3950050D6E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4EFF524264CB3950050D6E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4EFF52D264CB3950050D6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4EFF52F264CB3950050D6E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4EFF532264CB3950050D6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4EFF534264CB3950050D6E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EFF535264CB3950050D6E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4EFF545264CC8060050D6E6 /* GenerateTestUserSig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateTestUserSig.h; sourceTree = "<group>"; };
+		C4EFF546264CC8060050D6E6 /* GenerateTestUserSig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateTestUserSig.m; sourceTree = "<group>"; };
+		C4EFF58B264CD00A0050D6E6 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		C4EFF58C264CD00A0050D6E6 /* TCLoginParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLoginParam.h; sourceTree = "<group>"; };
+		C4EFF58D264CD00A0050D6E6 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		C4EFF58E264CD00A0050D6E6 /* TCLoginParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLoginParam.m; sourceTree = "<group>"; };
+		C4EFF593264CD07D0050D6E6 /* PAirSandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAirSandbox.m; sourceTree = "<group>"; };
+		C4EFF594264CD07D0050D6E6 /* TCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCUtil.m; sourceTree = "<group>"; };
+		C4EFF595264CD07D0050D6E6 /* TCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConstants.h; sourceTree = "<group>"; };
+		C4EFF596264CD07D0050D6E6 /* PAirSandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAirSandbox.h; sourceTree = "<group>"; };
+		C4EFF597264CD07D0050D6E6 /* TCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCUtil.h; sourceTree = "<group>"; };
+		C4EFF59C264CD5340050D6E6 /* TabbarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
+		C4EFF59D264CD5340050D6E6 /* TabbarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
+		C4EFF5A3264CD60B0050D6E6 /* ConversationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConversationVC.h; sourceTree = "<group>"; };
+		C4EFF5A4264CD60B0050D6E6 /* ConversationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConversationVC.m; sourceTree = "<group>"; };
+		C4EFF5A9264CD6480050D6E6 /* ContactsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsVC.h; sourceTree = "<group>"; };
+		C4EFF5AA264CD6480050D6E6 /* ContactsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsVC.m; sourceTree = "<group>"; };
+		C4EFF5AF264CD7EB0050D6E6 /* ChatVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatVC.h; sourceTree = "<group>"; };
+		C4EFF5B0264CD7EB0050D6E6 /* ChatVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatVC.m; sourceTree = "<group>"; };
+		C4EFF5B5264CFAE60050D6E6 /* MyCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomCell.h; sourceTree = "<group>"; };
+		C4EFF5B6264CFAE60050D6E6 /* MyCustomCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomCellData.h; sourceTree = "<group>"; };
+		C4EFF5B7264CFAE70050D6E6 /* MyCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomCell.m; sourceTree = "<group>"; };
+		C4EFF5B8264CFAE70050D6E6 /* MyCustomCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomCellData.m; sourceTree = "<group>"; };
+		C4EFF5BD264CFB600050D6E6 /* TUILiveRoomListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUILiveRoomListViewController.h; sourceTree = "<group>"; };
+		C4EFF5BE264CFB600050D6E6 /* TUILiveSceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUILiveSceneViewController.h; sourceTree = "<group>"; };
+		C4EFF5BF264CFB600050D6E6 /* TUILiveRoomListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUILiveRoomListViewController.m; sourceTree = "<group>"; };
+		C4EFF5C1264CFB600050D6E6 /* TUILiveRoomListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUILiveRoomListView.m; sourceTree = "<group>"; };
+		C4EFF5C2264CFB600050D6E6 /* TUILiveTopSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUILiveTopSegmentView.h; sourceTree = "<group>"; };
+		C4EFF5C3264CFB600050D6E6 /* TUILiveRoomListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUILiveRoomListCell.m; sourceTree = "<group>"; };
+		C4EFF5C4264CFB600050D6E6 /* TUILiveRoomInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUILiveRoomInfo.h; sourceTree = "<group>"; };
+		C4EFF5C5264CFB600050D6E6 /* TUILiveTopSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUILiveTopSegmentView.m; sourceTree = "<group>"; };
+		C4EFF5C6264CFB600050D6E6 /* TUILiveRoomListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUILiveRoomListView.h; sourceTree = "<group>"; };
+		C4EFF5C7264CFB600050D6E6 /* TUILiveRoomListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUILiveRoomListCell.h; sourceTree = "<group>"; };
+		C4EFF5C8264CFB600050D6E6 /* TUILiveRoomInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUILiveRoomInfo.m; sourceTree = "<group>"; };
+		C4EFF5CA264CFB600050D6E6 /* TUILiveRoomManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUILiveRoomManager.m; sourceTree = "<group>"; };
+		C4EFF5CB264CFB600050D6E6 /* TUILiveHeartBeatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUILiveHeartBeatManager.h; sourceTree = "<group>"; };
+		C4EFF5CC264CFB600050D6E6 /* TUILiveHeartBeatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUILiveHeartBeatManager.m; sourceTree = "<group>"; };
+		C4EFF5CD264CFB600050D6E6 /* TUILiveRoomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUILiveRoomManager.h; sourceTree = "<group>"; };
+		C4EFF5CE264CFB600050D6E6 /* TUILiveSceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUILiveSceneViewController.m; sourceTree = "<group>"; };
+		C4EFF5D9264D02ED0050D6E6 /* TFriendProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFriendProfileController.m; sourceTree = "<group>"; };
+		C4EFF5DA264D02ED0050D6E6 /* TFriendProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFriendProfileController.h; sourceTree = "<group>"; };
+		C4EFF79E264E0D000050D6E6 /* macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macro.h; sourceTree = "<group>"; };
+		C4EFF7F2264E70F50050D6E6 /* 腾讯IM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "腾讯IM.entitlements"; sourceTree = "<group>"; };
+		CFDBF1C1049A13C13AD95D6B /* Security.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Security.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = "<group>"; };
+		D064B18E0D5FE5FB109C3BC8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libsqlite3.0.tbd; sourceTree = "<group>"; };
+		FCC15B8AC233428A2CE1F94F /* CoreData.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4EFF51D264CB3950050D6E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971693A98A51075134EEF51C /* libPods-腾讯IM.a in Frameworks */,
+				4136CAC0F6655CBEED376DD7 /* libz.tbd in Frameworks */,
+				A9832B2193B9AAFA775A05A8 /* libsqlite3.0.tbd in Frameworks */,
+				725942C0A3840D729AE1928C /* CFNetwork.framework in Frameworks */,
+				73E045EEA6AB188EF20B0765 /* SystemConfiguration.framework in Frameworks */,
+				AA37B2A54B6AC74D872EFBBE /* CoreTelephony.framework in Frameworks */,
+				A6A55A8CB967EFD9758F538C /* Security.framework in Frameworks */,
+				58979936B9CF863A6A4CD791 /* CoreData.framework in Frameworks */,
+				BCBBBC40C50CAFE0DAC23B4A /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D1992A55E1D370E051976E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D4B0BF26D107B7C2A2340A8 /* libPods-腾讯IM.a */,
+				AE8F88FCA33E20B0D4300166 /* libz.tbd */,
+				D064B18E0D5FE5FB109C3BC8 /* libsqlite3.0.tbd */,
+				AA939E353E5BAFB2C5E763B8 /* CFNetwork.framework */,
+				7723D1E8103C04456BDD66BF /* SystemConfiguration.framework */,
+				35DC7CF1698FF6424B661AEA /* CoreTelephony.framework */,
+				CFDBF1C1049A13C13AD95D6B /* Security.framework */,
+				FCC15B8AC233428A2CE1F94F /* CoreData.framework */,
+				BF808B6823FCE52917F2D62E /* UserNotifications.framework */,
+				5752649DA41B6B46A234D67D /* XGMTACloud.framework */,
+				AAB5DEAF6EF0CB3E6D0423AA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAB5DEAF6EF0CB3E6D0423AA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				715D67B1863BE5B6EA21C08C /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C448F5F5264F6C48005927BB /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				C448F5F7264F6C62005927BB /* ProfileController.h */,
+				C448F5F9264F6C62005927BB /* ProfileController.m */,
+				C448F5F8264F6C62005927BB /* SettingController.h */,
+				C448F5F6264F6C62005927BB /* SettingController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		C4EFF517264CB3950050D6E6 = {
+			isa = PBXGroup;
+			children = (
+				C4EFF522264CB3950050D6E6 /* 腾讯IM */,
+				C4EFF521264CB3950050D6E6 /* Products */,
+				FCBCF13087951B827C16991E /* Pods */,
+				6D1992A55E1D370E051976E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4EFF521264CB3950050D6E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF520264CB3950050D6E6 /* 腾讯IM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4EFF522264CB3950050D6E6 /* 腾讯IM */ = {
+			isa = PBXGroup;
+			children = (
+				C448F5F5264F6C48005927BB /* Me */,
+				C4EFF7F2264E70F50050D6E6 /* 腾讯IM.entitlements */,
+				C4EFF79D264E0CEC0050D6E6 /* Macro */,
+				C4EFF5BC264CFB600050D6E6 /* Scenes */,
+				C4EFF5AE264CD7B40050D6E6 /* Chat */,
+				C4EFF5A8264CD63A0050D6E6 /* Contacts */,
+				C4EFF5A2264CD5F00050D6E6 /* Conversation */,
+				C4EFF59B264CD4BA0050D6E6 /* TabVC */,
+				C4EFF592264CD0680050D6E6 /* Util */,
+				C4EFF58A264CCFFD0050D6E6 /* Login */,
+				C4EFF544264CC7F70050D6E6 /* IMConfig */,
+				C4EFF523264CB3950050D6E6 /* AppDelegate.h */,
+				C4EFF524264CB3950050D6E6 /* AppDelegate.m */,
+				C4EFF52C264CB3950050D6E6 /* Main.storyboard */,
+				C4EFF52F264CB3950050D6E6 /* Assets.xcassets */,
+				C4EFF531264CB3950050D6E6 /* LaunchScreen.storyboard */,
+				C4EFF534264CB3950050D6E6 /* Info.plist */,
+				C4EFF535264CB3950050D6E6 /* main.m */,
+				C44CF087265F916E00373829 /* Localizable.strings */,
+			);
+			path = "腾讯IM";
+			sourceTree = "<group>";
+		};
+		C4EFF544264CC7F70050D6E6 /* IMConfig */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF545264CC8060050D6E6 /* GenerateTestUserSig.h */,
+				C4EFF546264CC8060050D6E6 /* GenerateTestUserSig.m */,
+			);
+			path = IMConfig;
+			sourceTree = "<group>";
+		};
+		C4EFF58A264CCFFD0050D6E6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF58B264CD00A0050D6E6 /* LoginController.h */,
+				C4EFF58D264CD00A0050D6E6 /* LoginController.m */,
+				C4EFF58C264CD00A0050D6E6 /* TCLoginParam.h */,
+				C4EFF58E264CD00A0050D6E6 /* TCLoginParam.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C4EFF592264CD0680050D6E6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF596264CD07D0050D6E6 /* PAirSandbox.h */,
+				C4EFF593264CD07D0050D6E6 /* PAirSandbox.m */,
+				C4EFF595264CD07D0050D6E6 /* TCConstants.h */,
+				C4EFF597264CD07D0050D6E6 /* TCUtil.h */,
+				C4EFF594264CD07D0050D6E6 /* TCUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C4EFF59B264CD4BA0050D6E6 /* TabVC */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF59C264CD5340050D6E6 /* TabbarVC.h */,
+				C4EFF59D264CD5340050D6E6 /* TabbarVC.m */,
+			);
+			path = TabVC;
+			sourceTree = "<group>";
+		};
+		C4EFF5A2264CD5F00050D6E6 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF5A3264CD60B0050D6E6 /* ConversationVC.h */,
+				C4EFF5A4264CD60B0050D6E6 /* ConversationVC.m */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		C4EFF5A8264CD63A0050D6E6 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF5A9264CD6480050D6E6 /* ContactsVC.h */,
+				C4EFF5AA264CD6480050D6E6 /* ContactsVC.m */,
+				C4EFF5DA264D02ED0050D6E6 /* TFriendProfileController.h */,
+				C4EFF5D9264D02ED0050D6E6 /* TFriendProfileController.m */,
+				C448F5EE264F6439005927BB /* SearchFriendViewController.h */,
+				C448F5ED264F6439005927BB /* SearchFriendViewController.m */,
+				C448F5F2264F6485005927BB /* FriendRequestViewController.h */,
+				C448F5F1264F6485005927BB /* FriendRequestViewController.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		C4EFF5AE264CD7B40050D6E6 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF5B4264CFAD00050D6E6 /* Custom */,
+				C4EFF5AF264CD7EB0050D6E6 /* ChatVC.h */,
+				C4EFF5B0264CD7EB0050D6E6 /* ChatVC.m */,
+				C44CF05E265F78C700373829 /* TUserProfileController.h */,
+				C44CF05F265F78C700373829 /* TUserProfileController.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		C4EFF5B4264CFAD00050D6E6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF5B5264CFAE60050D6E6 /* MyCustomCell.h */,
+				C4EFF5B7264CFAE70050D6E6 /* MyCustomCell.m */,
+				C4EFF5B6264CFAE60050D6E6 /* MyCustomCellData.h */,
+				C4EFF5B8264CFAE70050D6E6 /* MyCustomCellData.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C4EFF5BC264CFB600050D6E6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF5BD264CFB600050D6E6 /* TUILiveRoomListViewController.h */,
+				C4EFF5BF264CFB600050D6E6 /* TUILiveRoomListViewController.m */,
+				C4EFF5BE264CFB600050D6E6 /* TUILiveSceneViewController.h */,
+				C4EFF5CE264CFB600050D6E6 /* TUILiveSceneViewController.m */,
+				C4EFF5C0264CFB600050D6E6 /* Custom */,
+				C4EFF5C9264CFB600050D6E6 /* Data */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C4EFF5C0264CFB600050D6E6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF5C1264CFB600050D6E6 /* TUILiveRoomListView.m */,
+				C4EFF5C2264CFB600050D6E6 /* TUILiveTopSegmentView.h */,
+				C4EFF5C3264CFB600050D6E6 /* TUILiveRoomListCell.m */,
+				C4EFF5C4264CFB600050D6E6 /* TUILiveRoomInfo.h */,
+				C4EFF5C5264CFB600050D6E6 /* TUILiveTopSegmentView.m */,
+				C4EFF5C6264CFB600050D6E6 /* TUILiveRoomListView.h */,
+				C4EFF5C7264CFB600050D6E6 /* TUILiveRoomListCell.h */,
+				C4EFF5C8264CFB600050D6E6 /* TUILiveRoomInfo.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C4EFF5C9264CFB600050D6E6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF5CA264CFB600050D6E6 /* TUILiveRoomManager.m */,
+				C4EFF5CB264CFB600050D6E6 /* TUILiveHeartBeatManager.h */,
+				C4EFF5CC264CFB600050D6E6 /* TUILiveHeartBeatManager.m */,
+				C4EFF5CD264CFB600050D6E6 /* TUILiveRoomManager.h */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C4EFF79D264E0CEC0050D6E6 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFF79E264E0D000050D6E6 /* macro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		FCBCF13087951B827C16991E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				868CAAF7A3641CA7EFB4ADA0 /* Pods-腾讯IM.debug.xcconfig */,
+				0F371412E67718052AE0394A /* Pods-腾讯IM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4EFF51F264CB3950050D6E6 /* 腾讯IM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EFF539264CB3950050D6E6 /* Build configuration list for PBXNativeTarget "腾讯IM" */;
+			buildPhases = (
+				9C4B2A2C5C586DD3226CE4D9 /* [CP] Check Pods Manifest.lock */,
+				C4EFF51C264CB3950050D6E6 /* Sources */,
+				C4EFF51D264CB3950050D6E6 /* Frameworks */,
+				C4EFF51E264CB3950050D6E6 /* Resources */,
+				4B138014FDED2DC73C1627C8 /* [CP] Embed Pods Frameworks */,
+				7D9B75D66CF6FB59AA96DA78 /* [CP] Copy Pods Resources */,
+				560E719CCEC34BDAD1820E04 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "腾讯IM";
+			productName = "腾讯IM";
+			productReference = C4EFF520264CB3950050D6E6 /* 腾讯IM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4EFF518264CB3950050D6E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C4EFF51F264CB3950050D6E6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = C4EFF51B264CB3950050D6E6 /* Build configuration list for PBXProject "腾讯IM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = C4EFF517264CB3950050D6E6;
+			productRefGroup = C4EFF521264CB3950050D6E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4EFF51F264CB3950050D6E6 /* 腾讯IM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4EFF51E264CB3950050D6E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44CF08A265F916F00373829 /* Localizable.strings in Resources */,
+				C4EFF533264CB3950050D6E6 /* LaunchScreen.storyboard in Resources */,
+				C4EFF530264CB3950050D6E6 /* Assets.xcassets in Resources */,
+				C4EFF52E264CB3950050D6E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B138014FDED2DC73C1627C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-腾讯IM/Pods-腾讯IM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D9B75D66CF6FB59AA96DA78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-腾讯IM/Pods-腾讯IM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4B2A2C5C586DD3226CE4D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-腾讯IM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4EFF51C264CB3950050D6E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EFF5DB264D02ED0050D6E6 /* TFriendProfileController.m in Sources */,
+				C4EFF5CF264CFB600050D6E6 /* TUILiveRoomListViewController.m in Sources */,
+				C448F5FA264F6C62005927BB /* SettingController.m in Sources */,
+				C4EFF5D5264CFB600050D6E6 /* TUILiveHeartBeatManager.m in Sources */,
+				C4EFF599264CD07D0050D6E6 /* TCUtil.m in Sources */,
+				C448F5EF264F6439005927BB /* SearchFriendViewController.m in Sources */,
+				C4EFF5D2264CFB600050D6E6 /* TUILiveTopSegmentView.m in Sources */,
+				C4EFF5D6264CFB600050D6E6 /* TUILiveSceneViewController.m in Sources */,
+				C4EFF58F264CD00A0050D6E6 /* LoginController.m in Sources */,
+				C4EFF590264CD00A0050D6E6 /* TCLoginParam.m in Sources */,
+				C4EFF59E264CD5340050D6E6 /* TabbarVC.m in Sources */,
+				C4EFF547264CC8060050D6E6 /* GenerateTestUserSig.m in Sources */,
+				C4EFF5D4264CFB600050D6E6 /* TUILiveRoomManager.m in Sources */,
+				C4EFF5AB264CD6480050D6E6 /* ContactsVC.m in Sources */,
+				C4EFF5B9264CFAE70050D6E6 /* MyCustomCell.m in Sources */,
+				C4EFF525264CB3950050D6E6 /* AppDelegate.m in Sources */,
+				C4EFF5B1264CD7EB0050D6E6 /* ChatVC.m in Sources */,
+				C448F5FB264F6C62005927BB /* ProfileController.m in Sources */,
+				C448F5F3264F6485005927BB /* FriendRequestViewController.m in Sources */,
+				C4EFF536264CB3950050D6E6 /* main.m in Sources */,
+				C4EFF5D1264CFB600050D6E6 /* TUILiveRoomListCell.m in Sources */,
+				C4EFF5D3264CFB600050D6E6 /* TUILiveRoomInfo.m in Sources */,
+				C4EFF598264CD07D0050D6E6 /* PAirSandbox.m in Sources */,
+				C4EFF5A5264CD60B0050D6E6 /* ConversationVC.m in Sources */,
+				C44CF060265F78C700373829 /* TUserProfileController.m in Sources */,
+				C4EFF5D0264CFB600050D6E6 /* TUILiveRoomListView.m in Sources */,
+				C4EFF5BA264CFAE70050D6E6 /* MyCustomCellData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C44CF087265F916E00373829 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C44CF088265F916E00373829 /* en */,
+				C44CF089265F916F00373829 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C4EFF52C264CB3950050D6E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4EFF52D264CB3950050D6E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4EFF531264CB3950050D6E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4EFF532264CB3950050D6E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4EFF537264CB3950050D6E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C4EFF538264CB3950050D6E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4EFF53A264CB3950050D6E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 868CAAF7A3641CA7EFB4ADA0 /* Pods-腾讯IM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "腾讯IM/腾讯IM.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGH5QQBQ98;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TPNS",
+				);
+				INFOPLIST_FILE = "腾讯IM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TPNS",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.GR.demoIM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4EFF53B264CB3950050D6E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F371412E67718052AE0394A /* Pods-腾讯IM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "腾讯IM/腾讯IM.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGH5QQBQ98;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TPNS",
+				);
+				INFOPLIST_FILE = "腾讯IM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TPNS",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.GR.demoIM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4EFF51B264CB3950050D6E6 /* Build configuration list for PBXProject "腾讯IM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EFF537264CB3950050D6E6 /* Debug */,
+				C4EFF538264CB3950050D6E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4EFF539264CB3950050D6E6 /* Build configuration list for PBXNativeTarget "腾讯IM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EFF53A264CB3950050D6E6 /* Debug */,
+				C4EFF53B264CB3950050D6E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4EFF518264CB3950050D6E6 /* Project object */;
+}
